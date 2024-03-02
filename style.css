@@ -123,6 +123,7 @@ padding: 80px 160px;
     section{ padding: 0}
 .main .img{margin: 0;}
 .project{padding: 0px;}
+ .project div{margin-left:10px}
 }
 @media (max-width:579px) {
     .service img{display: none;}
