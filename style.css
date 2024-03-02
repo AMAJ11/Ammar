@@ -1,0 +1,150 @@
+*{box-sizing:border-box;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+
+
+}
+header{
+ 
+    background-image: linear-gradient(to right, rgb(105, 30, 245), rgb(8, 8, 8));
+    position: fixed;
+    z-index:999 ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+header .nav a{
+    color: white;
+    margin: 0px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight:500 ;
+    /* border: 1px solid rgb(153, 153, 223); */
+    border-radius: 10px;
+    background-color: rgb(67, 100, 248);
+   padding: 2px;
+}
+header .logo{color: rgb(163, 163, 163);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:900;
+    font-size: 1.8em;
+    text-shadow:2px 2px  rgb(88, 88, 88) ;
+   transition-duration: 0.3s;
+}
+header .logo:hover {letter-spacing: 3px;}
+.nav a:hover{color: rgb(105, 105, 233);
+background-color:transparent;
+}
+section{
+    padding: 100px 190px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img4.jpg);
+background-repeat: no-repeat;
+
+background-size: cover;
+background-position: center;
+}
+.main .social a img {
+    width:30px;
+    height: 30px;
+ margin-top: 10px;
+    background-color: rgb(174, 174, 240); 
+    transition-duration:0.13s;
+    transition-timing-function: linear;
+    border-radius: 50%;
+}
+.main h2{
+    color: whitesmoke;
+    font-weight: 500; }
+.main h2 span{color: cadetblue;
+    display: inline-block;
+    font-size: 1.6em;
+    margin-top:10px;
+    text-shadow: 2px 2px  rgb(25, 0, 255);}
+.main h3{
+    color: darkgrey;
+    margin-top: 15px;font-style:italic;}
+    .main h3 span{font-size: larger;color: rgb(97, 70, 250);}
+
+.main .img{width: 50%;height:50%;min-width: 200px;min-height: 200px;  margin-left: 10%;}
+.main .img img{border-radius: 50%;
+    opacity: 0.7;
+    box-shadow: 4px 2px rgb(115, 115, 245);
+    width: 100%;
+    height: 100%;
+  
+}
+.main .social a img:hover{
+    width: 35px;
+    height: 35px;
+    margin-right:  4px;
+    margin-bottom: -5px;
+}
+    .project{height: auto;
+        width: 100%;
+        margin-top: 20px; 
+        padding: 50px 55px;
+      background-image: linear-gradient(to left, rgba(17, 0, 255, 0.178), black, rgb(61, 61, 126));
+       
+    }
+    .project .pr{height: auto;padding: 50px 20px 10px 40px;display: flex ;flex-direction: row;justify-content: space-around;justify-items: center;flex-wrap: wrap;}
+    .project h2{text-align: center;font-weight: 500;font-size: 4em;color: white;text-shadow: 2px 1px rgb(221, 171, 255);}
+ .project .project1{height: 60vh;width: 45%;display: inline-block;border:dashed 2px black ;background-image:linear-gradient(to right, rgb(126, 83, 206), rgb(78, 75, 75, 0.973)); border-radius: 20%;display: flex;align-items: center;flex-direction: column;margin: 20px 5px;}
+ .project .pr .project1 a {height: 100%;width: 100%;border-radius: inherit;text-align: center;}
+ .project  .project1 img {height: 60%;width: 60%;border-radius: inherit;;transition-duration: 0.25s;transition-timing-function: linear}
+ .project .project1 h2{font-size: 35px;color:hsl(283, 91%, 17%);}
+.contact{padding: 20px 100px;height: auto;background-color:black ;margin-top: 30px;display: inline-block;width: 100%;display: flex;align-items: center;justify-content: space-between;flex-direction: column;}
+.contact .con{height: auto;}
+.contact .con h2{margin: 40px;color:white;display: inline-block;font-size: large;}
+.contact img{width: 200px;height: 160px;position: relative;display: block;border: 2px solid rgb(110, 110, 110);border-radius: 20%;}
+.service{background-image: linear-gradient(to right, rgb(134, 134, 134), black);margin-top: 30px;background-repeat: no-repeat;
+    background-size: cover;padding: auto 50px;
+    background-position: center;
+color: darkgray;display: flex;flex-direction: row;align-content: space-between;justify-content: center;
+padding: 80px 160px;
+}
+.service div h1{text-align: center;}
+.service img{width: 500px;height: 500px;margin-left: 50px;border-radius: 40%;}
+.service table{border: 2px solid #a3a3db;color: #fabcd9;margin-top: 10%;}
+.service table td{border: 2px solid #a3a3db;padding: 10px;width:300px;height: 60px;font-size: 2em;font-weight: 700;text-align: center;}
+.project .project1 a img:hover{width: 100%;height: 100%;}
+
+@media (max-width:800px){
+    header{padding: 0;}
+    section{ padding: 0}
+.main .img{margin: 0;}
+.project{padding: 0px;}
+}
+@media (max-width:579px) {
+    .service img{display: none;}
+}
+@media (max-width:500px) 
+{header .nav a{padding: 0px;font-size: 1em;font-weight: 300; margin: 0px 5px;}
+.service{padding: 0;}
+    header{padding:0px}
+    section{padding: 0px;}
+    .main{height: auto;}
+    .service{height:auto;}
+    .main .img{width: 100%;height: 100%;min-width: 60px;min-height: 60px;}
+    .main .img img{
+         width: 100%;
+    height: 100%;margin: 0px;}
+    .project{ padding: 0px;height: auto;}
+   .project .pr {display: block;padding: 0px;height: 100%;}
+   .project h2{text-align: center;font-weight: 300;font-size:10vw;color: white;}
+   .project .pr .project1{height: 18% ;;width: 100%;margin: 0px;}
+   .contact{padding: 0px;height: auto;background-color:black ;margin-top: 5px;width: 100%;display: flex;align-items: center;justify-content: space-between;flex-direction: column;}
+   .contact .con h2{margin: 2px;color:white;display: inline-block;font-size: medium;}
+   .contact img{width: 50%;height: 50%;display: block;border: 2px solid rgb(110, 110, 110);}
+}
+    
+
