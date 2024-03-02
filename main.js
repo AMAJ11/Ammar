@@ -17,7 +17,7 @@ let i = 1;
 //     btn.innerHTML = "Download this app";
 //     a.setAttribute("href", "https://digital-clock.en.uptodown.com/windows");prName.textContent="Digital clock";
 //   } else if (i == 2) {
-//     btn.innerHTML = "view this website";
+//     btn.innerHTML ="view this website";
 //     a.setAttribute("href", "https://amaj11.github.io/ALMAJD/");prName.textContent="AlmajdAcademy";
 //   } else if (i == 4) {
 //     btn.innerHTML = "view this website";
@@ -35,6 +35,7 @@ let i = 1;
 let prnm = ["IslamiApp","AlmajdAcademy","DigitalClock","ProduceAdmin"]
 btnN.onclick=function()
 {
+   imgimg.setAttribute('src',"");
    img.setAttribute('src',`${++i}.png`)
    prName.textContent=prnm[i-1];
    if (i == 1) {
